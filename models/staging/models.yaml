@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: stg_vam_fashion
+    description: "Слой очистки данных: переименование колонок и приведение типов"
+    columns:
+      - name: object_id
+        tests:
+          - unique
+          - not_null
+
+  - name: int_vam_fashion
+    description: "Промежуточный слой: здесь мы фильтруем только нужные века и категории"
+
+  - name: mart_fashion_metrics
+    description: "Финальная витрина: агрегаты для графиков"

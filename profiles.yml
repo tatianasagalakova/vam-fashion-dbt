@@ -1,0 +1,6 @@
+vam_fashion:
+  outputs:
+    dev:
+      type: duckdb
+      path: 'vam_fashion.duckdb' # Тот же путь, что в Python!
+  target: dev
